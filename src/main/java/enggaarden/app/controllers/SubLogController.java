@@ -25,7 +25,7 @@ public class SubLogController
     public String subLogOverview(Model model)
     {
         model.addAttribute("subLogs", subLogFactory.getSubLogs(subLogRepository.getSubLogs()));
-        return "/SubLogs/subLog_overview";
+        return "SubLogs/subLog_overview";
     }
 
     /*
@@ -34,7 +34,7 @@ public class SubLogController
     @GetMapping("/clearLog")
     public String clearLog()
     {
-        return "/Sublogs/subLog_clear";
+        return "Sublogs/subLog_clear";
     }
 
     @PostMapping("/clearLog")
