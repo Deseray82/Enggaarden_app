@@ -28,7 +28,7 @@ public class ContributionController
     public String overview(Model model)
     {
         model.addAttribute("contributions", contributionFactory.getContributions(contributionRepository.getContributions()));
-        return "/Contributions/contribution_overview";
+        return "Contributions/contribution_overview";
     }
 
     /*
@@ -39,7 +39,7 @@ public class ContributionController
     {
         model.addAttribute("contribution", contributionFactory.createContribution());
         model.addAttribute("activities", contributionRepository.getActivities());
-        return "/Contributions/contribution_create";
+        return "Contributions/contribution_create";
     }
 
     @PostMapping("/contributions/create")
@@ -56,7 +56,7 @@ public class ContributionController
     public String delete(@RequestParam("contributionId") int id, Model model)
     {
         model.addAttribute("cont", contributionFactory.getContribution(contributionRepository.getContribution(id)));
-        return "/Contributions/contribution_delete";
+        return "Contributions/contribution_delete";
     }
 
     @PostMapping("/contribution/delete")
