@@ -38,7 +38,7 @@ public class MemberController
     public String details(@RequestParam("memberId") int id, Model model)
     {
         model.addAttribute("member", memberFactory.getMember(memberRepository.getMember(id)));
-        return "/Members/member_details";
+        return "Members/member_details";
     }
 
     /*
@@ -50,7 +50,7 @@ public class MemberController
         model.addAttribute("boardoptions", memberFactory.getBoardOptions());
         model.addAttribute("member", memberFactory.createMember());
         model.addAttribute("memberTypes", memberRepository.getMemberTypes());
-        return "/Members/member_create";
+        return "Members/member_create";
     }
 
     @PostMapping("/create")
@@ -71,7 +71,7 @@ public class MemberController
         model.addAttribute("boardoptions", memberFactory.getBoardOptions());
         model.addAttribute("subscription", member.getSubscription());
         model.addAttribute("memberTypes", memberRepository.getMemberTypes());
-        return "/Members/member_edit";
+        return "Members/member_edit";
     }
 
     @PostMapping("/edit")
@@ -93,7 +93,7 @@ public class MemberController
     {
         model.addAttribute("member", memberFactory.getMember(memberRepository.getMember(id)));
         model.addAttribute("memberType", memberRepository.getMemberTypes());
-        return "/Members/member_delete";
+        return "Members/member_delete";
     }
 
     @PostMapping("/delete")
@@ -109,7 +109,7 @@ public class MemberController
     @GetMapping("/reset")
     public String reset()
     {
-        return "/Members/member_subreset";
+        return "Members/member_subreset";
     }
 
     @PostMapping("/reset")
