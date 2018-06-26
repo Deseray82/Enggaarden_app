@@ -26,11 +26,7 @@
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.grails.plugins/spring-security-bcrypt -->
-        <dependency>
-            <groupId>org.grails.plugins</groupId>
-            <artifactId>spring-security-bcrypt</artifactId>
-            <version>0.3</version>
-        </dependency>
+        
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
