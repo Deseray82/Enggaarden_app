@@ -25,7 +25,7 @@ public class UserController
     public String users(Model model)
     {
         model.addAttribute("users", userFactory.getUsers(userRepository.get()));
-        return "/Users/users_overview";
+        return "Users/users_overview";
     }
 
     /*
@@ -36,7 +36,7 @@ public class UserController
     {
         model.addAttribute("usr", userFactory.createUser());
         model.addAttribute("userTypes", userRepository.getUserTypes());
-        return "/Users/users_create";
+        return "Users/users_create";
     }
 
     @PostMapping("/users/create")
@@ -53,7 +53,7 @@ public class UserController
     public String deleteUser(@RequestParam("username") String username, Model model)
     {
         model.addAttribute("usr", userFactory.getUser(userRepository.get(username)));
-        return "/Users/user_delete";
+        return "Users/user_delete";
     }
 
     @PostMapping("/users/delete")
