@@ -29,7 +29,7 @@
         <dependency>
             <groupId>org.grails.plugins</groupId>
             <artifactId>spring-security-bcrypt</artifactId>
-            <version>0.2</version>
+            <version>0.3</version>
         </dependency>
 
         <dependency>
@@ -64,11 +64,7 @@
             <groupId>com.jayway.jsonpath</groupId>
             <artifactId>json-path</artifactId>
         </dependency>
-        <dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-dependency-plugin</artifactId>
-    <version>3.0.0</version>
-</dependency>
+        
 
     </dependencies>
 
