@@ -22,7 +22,7 @@ public class HomeController
     @GetMapping("/fail")
     public String fail()
     {
-        return "/fail";
+        return "fail";
     }
 
 }
