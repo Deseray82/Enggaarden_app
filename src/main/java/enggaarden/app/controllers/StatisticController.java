@@ -25,6 +25,6 @@ public class StatisticController
     {
         model.addAttribute("sum", statisticRepository.getSum());
         model.addAttribute("statistic", statisticFactory.statistics(statisticRepository.get()));
-        return "/Statistics/statistics_overview";
+        return "Statistics/statistics_overview";
     }
 }
