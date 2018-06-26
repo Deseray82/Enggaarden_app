@@ -31,7 +31,7 @@ public class MemberController
     {
         model.addAttribute("count", memberFactory.getMembers(memberRepository.getMember()).size());
         model.addAttribute("members", memberFactory.getMembers(memberRepository.getMember()));
-        return "/Members/members_overview";
+        return "Members/members_overview";
     }
 
     @GetMapping("/details")
