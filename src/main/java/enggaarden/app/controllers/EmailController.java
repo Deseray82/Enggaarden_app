@@ -26,6 +26,6 @@ public class EmailController
         model.addAttribute("external", er.emailForExternal());
         model.addAttribute("board", er.emailForBoard());
         model.addAttribute("all", er.emailForAll());
-        return "/Emails/email_send";
+        return "Emails/email_send";
     }
 }
