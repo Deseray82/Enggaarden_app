@@ -34,7 +34,7 @@ public class SubLogController
     @GetMapping("/clearLog")
     public String clearLog()
     {
-        return "/Sublogs/subLog_clear";
+        return "subLog_clear";
     }
 
     @PostMapping("/clearLog")
